@@ -11,6 +11,21 @@
   </head>
 
   <body>
+    <a href="/">Bulletin Board</a>
     <%= yield %>
+
+    <% if notice.present? %>
+    <div>
+      <%= notice %>
+    </div>
+  <% end %>
+
+  <% if alert.present? %>
+    <div>
+      <%= alert %>
+    </div>
+  <% end %>
+
+
   </body>
 </html>
