@@ -43,13 +43,20 @@
 
 <table>
   <tr>
-    <th>
-    </th>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Posted on</th>
+    <th>Expires on</th>
   </tr>
-  </table>
 
 <% matching_posts.each do |a_post| %>
-
+<tr>
+    <td><%= a_post.title %></td>
+    <td><%= a_post.body %></td>
+    <td><%= a_post.created_at %></td>
+    <td><%= a_post.expires_on %></td>
+</tr>
 
 
  <% end %>
+  </table>
